@@ -1,6 +1,6 @@
 const materias = [
   {
-    "id": "penal1",
+    "id": "penal",
     "nombre": "Derecho Penal I",
     "anio": 1,
     "cuatrimestre": "anual",
