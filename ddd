@@ -1,2 +1,196 @@
-<!DOCTYPE html>
-<title>Listado de materias interactivo</title>
+const materias = [
+  {
+    "id": "penal1",
+    "nombre": "Derecho Penal I",
+    "anio": 1,
+    "cuatrimestre": "anual",
+    "tipo": [
+      "anual"
+    ],
+    "correlativas": [],
+    "requisitos_final": [
+      "tgd"
+    ]
+  },
+  {
+    "id": "civil1",
+    "nombre": "Nociones elementales del Derecho Privado",
+    "anio": 1,
+    "cuatrimestre": "anual",
+    "tipo": [
+      "anual"
+    ],
+    "correlativas": [],
+    "requisitos_final": [
+      "tgd"
+    ]
+  },
+  {
+    "id": "filo",
+    "nombre": "Filosofía",
+    "anio": 1,
+    "cuatrimestre": 1,
+    "tipo": [
+      "cuatrimestral",
+      "promocional"
+    ],
+    "correlativas": [],
+    "requisitos_final": []
+  },
+  {
+    "id": "tgd",
+    "nombre": "Teoría General del Derecho",
+    "anio": 1,
+    "cuatrimestre": 1,
+    "tipo": [
+      "cuatrimestral",
+      "promocional"
+    ],
+    "correlativas": [],
+    "requisitos_final": []
+  },
+  {
+    "id": "oratoria",
+    "nombre": "Oratoria y Análisis de Textos Jurídicos",
+    "anio": 1,
+    "cuatrimestre": 2,
+    "tipo": [
+      "cuatrimestral",
+      "promocional"
+    ],
+    "correlativas": [],
+    "requisitos_final": []
+  },
+  {
+    "id": "sociologia",
+    "nombre": "Sociología",
+    "anio": 1,
+    "cuatrimestre": 2,
+    "tipo": [
+      "cuatrimestral",
+      "promocional"
+    ],
+    "correlativas": [],
+    "requisitos_final": []
+  },
+  {
+    "id": "comercial",
+    "nombre": "Derecho Comercial - Títulos de Crédito",
+    "anio": 2,
+    "cuatrimestre": 2,
+    "tipo": [
+      "cuatrimestral"
+    ],
+    "correlativas": [
+      "civil1"
+    ],
+    "requisitos_final": [
+      "civil1"
+    ]
+  },
+  {
+    "id": "obligaciones",
+    "nombre": "Derecho de las Obligaciones",
+    "anio": 2,
+    "cuatrimestre": 1,
+    "tipo": [
+      "cuatrimestral"
+    ],
+    "correlativas": [
+      "civil1"
+    ],
+    "requisitos_final": [
+      "civil1"
+    ]
+  },
+  {
+    "id": "daños",
+    "nombre": "Derecho de Daños",
+    "anio": 2,
+    "cuatrimestre": 2,
+    "tipo": [
+      "cuatrimestral"
+    ],
+    "correlativas": [
+      "obligaciones"
+    ],
+    "requisitos_final": [
+      "obligaciones"
+    ]
+  },
+  {
+    "id": "penal2",
+    "nombre": "Derecho Penal II",
+    "anio": 2,
+    "cuatrimestre": "anual",
+    "tipo": [
+      "anual"
+    ],
+    "correlativas": [
+      "penal1"
+    ],
+    "requisitos_final": [
+      "penal1"
+    ]
+  },
+  {
+    "id": "conformacion",
+    "nombre": "Conformación Histórico-Política del Estado Argentino",
+    "anio": 2,
+    "cuatrimestre": 1,
+    "tipo": [
+      "cuatrimestral",
+      "promocional"
+    ],
+    "correlativas": [],
+    "requisitos_final": []
+  },
+  {
+    "id": "politico",
+    "nombre": "Derecho Político",
+    "anio": 2,
+    "cuatrimestre": 2,
+    "tipo": [
+      "cuatrimestral",
+      "promocional"
+    ],
+    "correlativas": [
+      "conformacion"
+    ],
+    "requisitos_final": [
+      "conformacion"
+    ]
+  },
+  {
+    "id": "razonamiento",
+    "nombre": "Razonamiento Jurídico Aplicado",
+    "anio": 2,
+    "cuatrimestre": 2,
+    "tipo": [
+      "cuatrimestral",
+      "promocional"
+    ],
+    "correlativas": [
+      "tgd"
+    ],
+    "requisitos_final": [
+      "tgd"
+    ]
+  },
+  {
+    "id": "teologia1",
+    "nombre": "Teología I",
+    "anio": 2,
+    "cuatrimestre": 1,
+    "tipo": [
+      "cuatrimestral",
+      "promocional"
+    ],
+    "correlativas": [
+      "filo"
+    ],
+    "requisitos_final": [
+      "filo"
+    ]
+  }
+];
